@@ -1,5 +1,5 @@
 def reverse(input=''):
-    finalStr = ''
-    for char in input:
-        finalStr = char + finalStr
-    return finalStr
+    if (not len(input)):
+        return input
+    else:
+        return reverse(input[1:]) + input[:1]
